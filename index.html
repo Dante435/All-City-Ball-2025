@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>All City Basketball</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/favicon.ico"/> 
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id='preloader'class="slide-out-bottom">
+      <img class="scale-in-center" src="assets/logo-white-BTA.png" alt='header img' />
+    </div>
+
+
+  <!-- Navbar -->
+  <nav class="navbar" data-aos="fade-down" data-aos-duration="1000">
+    <div class="container nav-container">
+      <div class="logo">
+        <img src="assets/logo-white-BTA.png" alt="">
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+        <h1></h1>
+          <form>
+            <label for="light-theme">Light</label>
+            <input type="radio" id="light-theme" name="theme" value="light" checked>
+            <label for="dark-theme">Dark</label>
+            <input type="radio" id="dark-theme" name="theme" value="dark">
+          </form>
+      <div class="burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="overlay">
+      <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+        <h1>Our Story</h1>
+        <p>Building community through basketball excellence</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section class="app__story">
+      <div class="app__story-section">
+        <h1>ABOUT US</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+        <button class="custom__button">KNOW MORE</button>
+      </div>
+    
+      <div class="app__story-logo">
+        <img src="assets/log&emblem-white.png" alt="All City Logo" />
+      </div>
+    
+      <div class="app__story-section">
+        <h1>OUR HISTORY</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+        <button class="custom__button">KNOW MORE</button>
+      </div>
+    </section>
+    
+    <!-- Coach Section -->
+    <section class="coach-section">
+      <div class="container coach-container" data-aos="fade-up" data-aos-duration="1000">
+        
+        <!-- Coach Image -->
+        <div class="coach-image">
+          <img src="assets/Coach1.png" alt="Coach Photo">
+        </div>
+    
+        <!-- Coach Text Content -->
+        <div class="coach-content">
+          <h3 class="coach-subheading">COACHS WORD</h3>
+          <h2 class="coach-heading">WHAT WE BELIEVE IN</h2>
+          <div class="coach-quote">
+            <img  class="quote" src="assets/quote.png" alt="">
+            <p class="p__opensans">
+              We belive Basketball is not just a game; it's a way of life." 
+            </p>
+          </div>
+            <p class="p__opensans">"We teach our players to be leaders on and off the court.
+              With the team of coaches and players we have, we provide a strong road map for our players to achieve their full potential."</p></p>
+            </p>
+          
+          <h3>Coach Douglas</h3>
+          <p><strong></strong><br>Coach & Owner</p>
+          <div class="coach-signature">
+            
+            <img src="assets/signCoachDouglas.png" alt="">
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+<!-- Photos Section -->
+<section class="video-gallery">
+  <!-- Left Side Text Content -->
+  <div class="video-gallery__content">
+    <p class="gallery-sub">INSTAGRAM</p>
+    <h2 class="gallery-title">VIDEO GALLERY</h2>
+    <p class="gallery-desc">Where The Best Show Why They Are The Best</p>
+    <button type="button" class="btn-red">View More</button>
+  </div>
+
+  <!-- Right Side Video Gallery -->
+  <div class="video-gallery__videos">
+    <!-- Arrows -->
+    <div class="video-gallery__arrows">
+      <span class="gallery__arrow-icon" onclick="scroll('left')">&#8592;</span>
+      <span class="gallery__arrow-icon" onclick="scroll('right')">&#8594;</span>
+    </div>
+
+    <!-- Scrollable Video Container -->
+    <div class="video-gallery__container">
+      <div class="video-gallery__card">
+        <a href="https://www.instagram.com/reel/xxxx1" target="_blank">
+          <video src="assets/vid_1.MOV" muted autoplay loop playsinline></video>
+          <span class="video-gallery__icon">▶</span>
+        </a>
+      </div>
+      
+      <div class="video-gallery__card">
+        <a href="https://www.instagram.com/reel/xxxx2" target="_blank">
+          <video src="assets/vid_2.MOV" muted autoplay loop playsinline></video>
+          <span class="video-gallery__icon">▶</span>
+        </a>
+      </div>
+      
+      <div class="video-gallery__card">
+        <a href="https://www.instagram.com/reel/xxxx3" target="_blank">
+          <video src="assets/vid_3.MOV" muted autoplay loop playsinline></video>
+          <span class="video-gallery__icon">▶</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  const scroll = (direction) => {
+    const container = document.querySelector('.video-gallery__container');
+    const scrollAmount = 300;
+
+    if (direction === 'left') {
+      container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    } else {
+      container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
+</script>
+
+
+
+<!-- Joiin Section -->
+    <section class="cta-section">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Join the Movement</h2>
+        <p>Be part of something bigger. Train. Compete. Grow.</p>
+        <a href="/contact" class="btn">Contact Us</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+        <section class="socials">
+          <h2>OUR SOCIALS</h2>
+          <img src="" alt="">
+          <div class="social-icons">
+            <a href="#" target="_blank" class="social-icon facebook"><img src="assets/socials/vecteezy_tiktok-logo-png-tiktok-logo-transparent-png-tiktok-icon_23986939.png" alt="" class="social-img"></a>
+            <a href="#" target="_blank" class="social-icon twitter"><img src="assets/socials/facebook-logo-black-2019.png" alt=""class="social-img"></a>
+            <a href="#" target="_blank" class="social-icon instagram"><img src="assets/socials/instagram-icon-white-on-gradient.png" alt=""class="social-img"></a>
+        </div>
+        </section>
+      </main>
+      <div class="social-media">
+        
+      
+      </div>
+      <footer class="footer">
+        <p>&copy; 2024 Gymshark</p>
+      </footer>
+
+
+
+  <!-- AOS & Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
